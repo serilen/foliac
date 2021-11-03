@@ -1,0 +1,95 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+	margin: 0;
+	transition: all .3s ease-in;
+}
+
+html, body{
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #3c4955;
+	background-color: #ffffff;
+	height: 100%;	
+	max-height: 100vh;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+a {
+	outline: none;
+	background-color: transparent;
+	text-decoration-color: transparent;
+	color: inherit;
+}
+
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main {
+	padding: 50px 0 90px;
+	height: 100%;
+}
+
+.sr-only {
+	position: absolute;
+	margin: -1px 0 0 -1px;
+	padding: 0;
+	display: block;
+	width: 1px;
+	height: 1px;
+	font-size: 1px;
+	line-height: 1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+	outline: 0;
+}
+
+.nav {
+	text-align: center;
+	margin-bottom: 50px;
+	&__list {
+		display: inline-block;
+	}
+	&__item {
+		display: inline-block;
+		margin-right: 12px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		display: block;
+		background-color: #eaeaea;
+		padding: 10px 15px;
+	}
+}
+
+
+.grid {
+	max-width: 1140px;
+	&__item {
+		width: 450px;
+		margin-bottom: 40px;
+		&--big {
+			width: 650px;
+		}
+	}
+}
