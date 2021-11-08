@@ -20,26 +20,24 @@
 	<main class="main">
 		<div class="container">
 			<h1 class="sr-only">Foliac</h1>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a class="nav__link" href="#">Tous les projets</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">Webdesign</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">UI/UX design</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">Illustration</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">Motion design</a></li>
-				</ul>
-			</nav>
+				<div id="filters" class="btn-group">
+					<button type="button" class="btn" autofocus data-filter="*">Tous les projets</button>
+					<button type="button" class="btn" data-filter=".web-design">Webdesign</button>
+					<button type="button" class="btn" data-filter=".ui-ux-design">UI/UX design</button>
+					<button type="button" class="btn" data-filter=".illustration">Illustration</button>
+					<button type="button" class="btn" data-filter=".motion-design">Motion design</button>
+				</div>
 			<div class="grid">
-				<div class ="grid__item">
+				<div class ="grid__item web-design">
 					<img src="image/multiple.png" alt="multiple">
 				</div>
-				<div class ="grid__item grid__item--big">
+				<div class ="grid__item grid__item--big ui-ux-design">
 					<img src="image/identité-visuelle.png" alt="identite-visuelle">
 				</div>
-				<div class ="grid__item">
+				<div class ="grid__item illustration">
 					<img src="image/app.png" alt="">
 				</div>
-				<div class ="grid__item grid__item--big">
+				<div class ="grid__item grid__item--big motion-design">
 					<img src="image/prototype.png" alt="prototype">
 
 				</div>

@@ -23,19 +23,6 @@ h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 }
 
-a {
-	outline: none;
-	background-color: transparent;
-	text-decoration-color: transparent;
-	color: inherit;
-}
-
-.img-responsive {
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -45,6 +32,7 @@ a {
 .main {
 	padding: 50px 0 90px;
 	height: 100%;
+	text-align: center;
 }
 
 .sr-only {
@@ -62,23 +50,30 @@ a {
 	outline: 0;
 }
 
-.nav {
-	text-align: center;
-	margin-bottom: 50px;
-	&__list {
-		display: inline-block;
+.btn-group {
+	margin: 0 auto 50px;
+	display: inline-block;		
+}
+.btn {
+	display: inline-block;
+	margin-right: 12px;
+	background-color: #eaeaea;
+	padding: 7px 11px;
+	border-color: transparent;
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+	cursor: pointer;
+	
+	&:last-child {
+		margin-right: 0;
 	}
-	&__item {
-		display: inline-block;
-		margin-right: 12px;
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-	&__link {
-		display: block;
-		background-color: #eaeaea;
-		padding: 10px 15px;
+
+	&:hover,
+	&:focus {
+		background-color: #48bf72;
+		color: #fff;
+		outline: none;
 	}
 }
 

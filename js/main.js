@@ -8,17 +8,10 @@
 			//percentPosition: true, //процентный размер
 			gutter: 40
 		});
-		
-		$('.grid').isotope({
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
-});
 	})
-
-//подключение нативным JS
-/*var elem = document.querySelector('.grid');
-var msnry = new Masonry( elem, {
+//подключение masonry нативным JS
+/*let elem = document.querySelector('.grid');
+let msnry = new Masonry( elem, {
   // options
   itemSelector: '.grid-item',
   columnWidth: 200
@@ -26,9 +19,31 @@ var msnry = new Masonry( elem, {
 
 // element argument can be a selector string
 //   for an individual element
-var msnry = new Masonry( '.grid', {
+let msnry = new Masonry( '.grid', {
   // options
 });*/
+
+
+//Подключение Isotope
+// Инициализая секции с которой работаем
+let grid = new Isotope('.grid', {
+	itemSelector: '.grid__item',
+	layoutMode: 'fitRows'
+});
+
+// Работаем с кнопками фильтров
+let filterBtn = document.querySelectorAll('.btn-group .btn');
+for (let i = 0; i < filterBtn.length; i++) {
+    // Если кликнули по ссылке
+    filterBtn[i].onclick = function (click) {
+       // Получаем значение дата-атрибута кнопки
+       let filterData = event.target.getAttribute('data-filter');
+        // Применяем фильтрацию элементов в Isotope
+        grid.arrange({
+        	filter: filterData
+        });
+     };
+  }
 
 })();
 
