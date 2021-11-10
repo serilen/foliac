@@ -1,7 +1,7 @@
 *, *:after, *:before {
 	box-sizing: border-box;
 	margin: 0;
-	transition: all .3s ease-in;
+	//transition: all .3s ease-in;
 }
 
 html, body{
@@ -80,9 +80,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .grid {
 	max-width: 1140px;
+	
 	&__item {
 		width: 450px;
-		margin-bottom: 40px;
+		height: auto;
+		margin: 10px;
+		
+		
 		&--big {
 			width: 650px;
 		}

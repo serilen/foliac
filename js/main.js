@@ -4,9 +4,9 @@
 	jQuery(function($) {
 		$(".grid").masonry({
 			itemSelector:'.grid__item',
-			columnWidth: 42,
+			columnWidth: 20,
 			//percentPosition: true, //процентный размер
-			gutter: 40
+			gutter: 20
 		});
 	})
 //подключение masonry нативным JS
@@ -16,7 +16,6 @@ let msnry = new Masonry( elem, {
   itemSelector: '.grid-item',
   columnWidth: 200
 });
-
 // element argument can be a selector string
 //   for an individual element
 let msnry = new Masonry( '.grid', {
@@ -46,4 +45,3 @@ for (let i = 0; i < filterBtn.length; i++) {
   }
 
 })();
-
